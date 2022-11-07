@@ -1,0 +1,137 @@
+{
+  "name": "navicate-premium",
+  "path": "C:\\Program Files\\PremiumSoft\\Navicat Premium 12\\navicat.exe",
+  "callback": "http://127.0.0.1:8080/callback",
+  "autoFillInfo": {
+    "title": "^Navicat",
+    "timeout": 10,
+    "maximize": false,
+    "action": [
+      {
+        "target": {
+          "text": "ActionMainMenuBar"
+        },
+        "event": "mouse",
+        "param": [
+          [
+            10,
+            10
+          ],
+          "left"
+        ],
+        "wait": 0.5
+      },
+      {
+        "target": {
+          "class": "TThemedPopupMenu"
+        },
+        "event": "mouse",
+        "param": [
+          [
+            10,
+            30
+          ],
+          ""
+        ],
+        "wait": 0.5
+      },
+      {
+        "target": {
+          "class": "TThemedPopupMenu",
+          "seq": 1
+        },
+        "event": "mouse",
+        "param": [
+          [
+            10,
+            10
+          ],
+          "left"
+        ],
+        "wait": 0.5
+      },
+      {
+        "target": {
+          "class": "TEdit",
+          "seq": 1
+        },
+        "event": "message",
+        "param": [
+          "WM_SETTEXT",
+          "192.168.4.73"
+        ]
+      },
+      {
+        "target": {
+          "class": "TEdit",
+          "seq": 2
+        },
+        "event": "message",
+        "param": [
+          "WM_SETTEXT",
+          "3306"
+        ]
+      },
+      {
+        "target": {
+          "class": "TEdit",
+          "seq": 3
+        },
+        "event": "message",
+        "param": [
+          "WM_SETTEXT",
+          "root"
+        ]
+      },
+      {
+        "target": {
+          "class": "TEdit",
+          "seq": 4
+        },
+        "event": "message",
+        "param": [
+          "WM_SETTEXT",
+          "root123"
+        ]
+      },
+      {
+        "target": {
+          "class": "TButton",
+          "text": "确定1"
+        },
+        "event": "mouse",
+        "param": [
+          [
+            10,
+            10
+          ],
+          "left"
+        ],
+        "wait": 0.5
+      }
+
+    ]
+  },
+  "postRun": [
+    {
+      "action": "fileclean",
+      "params": [
+        "%USERPROFILE%\\Documents\\Navicat"
+      ]
+    },
+    {
+      "action": "regclean",
+      "params": [
+        "HKEY_CURRENT_USER\\Software\\PremiumSoft\\Navicat\\Servers"
+      ]
+    },
+    {
+      "action": "command",
+      "params": [
+        "echo",
+        "test"
+      ]
+    }
+  ]
+}
+

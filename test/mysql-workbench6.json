@@ -1,0 +1,104 @@
+{
+  "name": "workbench6",
+  "path": "C:\\Program Files\\MySQL\\MySQL Workbench 6.3 CE\\MySQLWorkbench.exe",
+  "callback": "http://localhost:8080/callback",
+  "autoFillInfo": {
+      "title": "^MySQL Workbench",
+      "timeout": 10,
+      "maximize": true,
+      "action": [
+        {
+          "target": {
+            "class": "WindowsForms10.Window.8.app.0",
+            "seq":7
+          },
+          "event" : "mouse",
+          "param": [[233, 39], "left"],
+          "wait": 1
+        },
+        {
+          "desc": "输入连接名称",
+          "target": {
+            "class": "WindowsForms10.EDIT.app",
+            "seq":0
+          },
+          "event" : "message",
+          "param": ["WM_SETTEXT", "${title}"]
+        },
+        {
+          "desc": "输入IP地址",
+          "target": {
+            "text": "127.0.0.1"
+          },
+          "event" : "message",
+          "param": ["WM_SETTEXT", "${host}"]
+        },
+        {
+          "desc": "输入端口",
+          "target": {
+            "text": "3306"
+          },
+          "event" : "message",
+          "param": ["WM_SETTEXT", "${port}"]
+        },
+        {
+          "desc": "用户名",
+          "target": {
+            "text": "root"
+          },
+          "event" : "message",
+          "param": ["WM_SETTEXT", "${userName}"]
+        },
+        {
+          "desc": "点击输入密码",
+          "target": {
+            "text": "Store in Vault ..."
+          },
+          "event" : "mouse",
+          "param": [[10, 10], "left"]
+        },
+        {
+          "desc": "密码",
+          "target": {
+            "seq": 10
+          },
+          "event" : "message",
+          "param": ["WM_SETTEXT", "${password}"]
+        },
+        {
+          "desc": "点击OK",
+          "target": {
+            "text": "OK"
+          },
+          "event" : "mouse",
+          "param": [[10, 10], "left"]
+        },
+        {
+          "desc": "default schema",
+          "target": {
+            "class": "WindowsForms10.EDIT.app",
+            "seq": 3
+          },
+          "event" : "message",
+          "param": ["WM_SETTEXT", "${schema}"]
+        },
+        {
+          "desc": "点击OK",
+          "target": {
+            "text": "OK"
+          },
+          "event" : "mouse",
+          "param": [[10, 10], "left"]
+        }
+      ]
+    },
+  "postRun": [
+    {
+      "action": "fileclean",
+      "params": [
+        "%APPDATA%\\Mysql\\Workbench\\connections.xml"
+      ]
+    }
+  ]
+}
+

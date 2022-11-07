@@ -1,0 +1,7 @@
+{
+    "name": "navicat",
+    "param":"",
+    "path":"C:\\Program Files (x86)\\PremiumSoft\\Navicat for MySQL\\navicat.exe",
+    "callback":  "http://localhost:8080/callback"
+}
+

@@ -1,0 +1,16 @@
+{
+  "name": "Required, equal to the prefix of filename, for example navicate",
+  "path": "Required, full path of app exe file, for example: C:\\Program Files (x86)\\PremiumSoft\\Navicat for MySQL\\navicat.exe",
+  "callback": "http://127.0.0.1:8080/callback",
+  "autoFillInfo": {
+    "title": "",
+    "timeout": 10,
+    "maximize": false,
+    "action": [
+    ]
+  },
+  "postRun": {
+  }
+}
+
+

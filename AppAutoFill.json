@@ -1,0 +1,38 @@
+{
+    "name": "navicat",
+    "apppath":"d:\\navicat\\navicat.exe",
+    "title":"navicat",
+    "timeout":10,
+    "step1":{
+        "desc":"根据标签查找控件，并鼠标左键点击",
+        "target":{
+            "desc":"标签为open的控件，在相对位置(0,0)上点击",
+            "text":"open"
+        },
+        "event":"mouse",
+        "param":["(10,10)", "left"],
+        "wait":0.5
+    },
+    "step2":{
+        "desc":"根据ID或类型查找控件, 并键盘输入, user参数由外部程序输入",
+        "target":{
+            "desc":"id为0x16a的Edit控件",
+            "class":"Edit",
+            "id":320023
+        },
+        "event":"keyboard",
+        "param":["${username}"],
+        "wait":0
+    },
+    "step3":{
+        "desc":"根据类型顺序查找控件, 并发送WM事件，类似于WM_SETTEXT, password参数由外部程序输入",
+        "target":{
+            "desc":"第二个Edit控件",
+            "class":"EDIT",
+            "seq":2
+        },
+        "event":"message",
+        "param":["WM_SETTEXT", "${password}"],
+        "wait":0
+    }
+}

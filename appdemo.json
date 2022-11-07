@@ -1,0 +1,33 @@
+{
+    "name": "AppDemo1",
+    "apppath":"D:\\work\\AppAutoFill\\AppDemo1.exe",
+    "title":"AppDemo1",
+    "timeout":10,
+    "step1":{
+        "target":{
+            "class":"Edit",
+            "seq":"1"
+        },
+        "event":"message",
+        "param":["WM_SETTEXT", "aaaa"],
+        "wait":0.5
+    },
+    "step2":{
+        "target":{
+            "class":"Edit",
+            "seq":"2"
+        },
+        "event":"message",
+        "param":["WM_SETTEXT", "bbbb"],
+        "wait":0.5
+    },
+    "step3":{
+        "target":{
+            "class":"Button",
+            "text": "确定"
+        },
+        "event":"mouse",
+        "param":["(5,5)", "left"],
+        "wait":0
+    }
+}

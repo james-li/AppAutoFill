@@ -1,0 +1,155 @@
+{
+  "name": "navicat",
+  "path": "C:\\Program Files (x86)\\PremiumSoft\\Navicat for MySQL\\navicat.exe",
+  "callback": "http://localhost:8080/callback",
+  "autoFillInfo": {
+    "title": "^Navicat",
+    "timeout": 10,
+    "maximize": false,
+    "action": [
+      {
+        "desc": "点击开始菜单",
+        "target": {
+          "desc": "标签为ActionMainMenuBar的控件，在相对位置(0,0)上点击",
+          "text": "ActionMainMenuBar"
+        },
+        "event": "mouse",
+        "param": [
+          [
+            10,
+            10
+          ],
+          "left"
+        ],
+        "wait": 0.5
+      },
+      {
+        "desc": "移动到子菜单上",
+        "target": {
+          "desc": "类型为TThemedPopupMenu的控件",
+          "class": "TThemedPopupMenu"
+        },
+        "event": "mouse",
+        "param": [
+          [
+            10,
+            10
+          ],
+          ""
+        ],
+        "wait": 0.5
+      },
+      {
+        "desc": "点击打开菜单",
+        "target": {
+          "desc": "类型为TThemedPopupMenu的控件",
+          "class": "TThemedPopupMenu"
+        },
+        "event": "mouse",
+        "param": [
+          [
+            10,
+            10
+          ],
+          "left"
+        ],
+        "wait": 0.1
+      },
+      {
+        "desc": "隐藏输入法，此步骤可能失败，但是失败后仍然继续",
+        "target": {
+          "desc": "类型为NativeHWNDHost的控件",
+          "class": "NativeHWNDHost",
+          "seq":0
+        },
+        "event": "hide",
+        "param": [true],
+        "wait": 0.1,
+        "continue":true
+      },
+
+      {
+        "desc": "输入数据库名",
+        "target": {
+          "desc": "最后一个Edit控件",
+          "class": "TEdit",
+          "seq": -1
+        },
+        "event": "keyboard",
+        "param": [
+          [10, 10],
+          "TesT"
+        ],
+        "wait": 0.1,
+        "focus": true
+      },
+      {
+        "desc": "输入用户名",
+        "target": {
+          "desc": "第三个Edit控件（从0开始）",
+          "class": "TEdit",
+          "seq": 2
+        },
+        "event": "message",
+        "param": [
+          "WM_SETTEXT",
+          "testuser"
+        ],
+        "wait": 0.1
+      },
+      {
+        "desc": "输入密码",
+        "target": {
+          "desc": "第二个Edit控件（从0开始）",
+          "class": "TEdit",
+          "seq": 1
+        },
+        "event": "message",
+        "param": [
+          "WM_SETTEXT",
+          "testuser"
+        ],
+        "wait": 0.1
+      },
+      {
+        "desc": "点击ok按钮",
+        "target": {
+          "desc": "第二个Tbutton控件（从0开始）",
+          "class": "TButton",
+          "seq": 2
+        },
+        "event": "mouse",
+        "param": [
+          [
+            10,
+            10
+          ],
+          "left"
+        ],
+        "wait": 0.1
+      }
+    ]
+  },
+  "postRun": [
+    {
+      "action": "fileclean",
+      "params": [
+        "%USERPROFILE%\\Documents\\Navicat"
+      ]
+    },
+    {
+      "action": "regclean",
+      "params": [
+        "HKEY_CURRENT_USER\\Software\\PremiumSoft\\Navicat\\Servers"
+      ]
+    },
+    {
+      "action": "command",
+      "params": [
+        "echo",
+        "test"
+      ]
+    }
+  ]
+}
+

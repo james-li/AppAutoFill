@@ -1,0 +1,68 @@
+{
+  "name": "navicat",
+  "path": "F:\\PLSQL\\plsqldev.exe",
+  "callback": "http://127.0.0.1:8080/callback",
+  "autoFillInfo": {
+    "title": "^Oracle",
+    "timeout": 10,
+    "maximize": false,
+    "action": [
+      {
+        "desc": "输入数据库名称",
+        "target": {
+          "class": "Edit",
+          "id": 1001
+        },
+        "event": "message",
+        "param": [
+          "WM_SETTEXT",
+          "testdb"
+        ]
+      },
+      {
+        "desc": "输入数据库用户名",
+        "target": {
+          "class": "TEdit",
+          "seq": 1
+        },
+        "event": "message",
+        "param": [
+          "WM_SETTEXT",
+          "testuser"
+        ]
+      },
+      {
+        "desc": "输入数据库密码",
+        "target": {
+          "class": "TEdit",
+          "seq": 0
+        },
+        "event": "message",
+        "param": [
+          "WM_SETTEXT",
+          "testpwd"
+        ]
+      },
+      {
+        "desc": "点击ok按钮",
+        "target": {
+          "class": "TButton",
+          "text": "OK"
+        },
+        "event": "mouse",
+        "param": [
+          [
+            10,
+            10
+          ],
+          "left"
+        ],
+        "wait": 0.5
+      }
+    ]
+  },
+  "postrun": {
+  }
+}
+
+

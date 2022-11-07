@@ -1,0 +1,6 @@
+{
+    "name": "navicat",
+    "path":"C:\\windows\\write.exe",
+    "callback":  "http://localhost:8080/callback"
+}
+
