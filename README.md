@@ -1,60 +1,60 @@
-# ×Ô¶¯Ìî³ä¹¤¾ßÊ¹ÓÃËµÃ÷
-×Ô¶¯Ìî³ä¹¤¾ßÊÇÒ»¿î´ò¿ªapp²¢½øÐÐ¶ÔÓ¦²Ù×÷µÄ×Ô¶¯»¯³ÌÐò¡£ËùÓÐµÄ²Ù×÷¶¼ÔÚjsonÎÄ¼þÖÐ½øÐÐ¶¨Òå£¬Èç navicate-premium.json
+# è‡ªåŠ¨å¡«å……å·¥å…·ä½¿ç”¨è¯´æ˜Ž
+è‡ªåŠ¨å¡«å……å·¥å…·æ˜¯ä¸€æ¬¾æ‰“å¼€appå¹¶è¿›è¡Œå¯¹åº”æ“ä½œçš„è‡ªåŠ¨åŒ–ç¨‹åºã€‚æ‰€æœ‰çš„æ“ä½œéƒ½åœ¨jsonæ–‡ä»¶ä¸­è¿›è¡Œå®šä¹‰ï¼Œå¦‚ navicate-premium.json
 
-±¾ÎÄµµÖ÷Òª½éÉÜÈçºÎÌí¼ÓÒ»¿îapp£¬²¢ÀûÓÃ×Ô¶¯Ìî³ä¹¤¾ßÊµÏÖÄ¿±ê²Ù×÷
+æœ¬æ–‡æ¡£ä¸»è¦ä»‹ç»å¦‚ä½•æ·»åŠ ä¸€æ¬¾appï¼Œå¹¶åˆ©ç”¨è‡ªåŠ¨å¡«å……å·¥å…·å®žçŽ°ç›®æ ‡æ“ä½œ
 
-## ÐÂÔöapp£¬ÊµÏÖ×Ô¶¯Ìî³ä
-ÕâÀïÒÔÌí¼Ónavicat-premium¹¤¾ßµÄ×Ô¶¯£¬Ìî³äÁ¬½Óµ½mysqlÊý¾Ý¿âÎªÀý£¬½éÉÜÊµÏÖ²½Öè
+## æ–°å¢žappï¼Œå®žçŽ°è‡ªåŠ¨å¡«å……
+è¿™é‡Œä»¥æ·»åŠ navicat-premiumå·¥å…·çš„è‡ªåŠ¨ï¼Œå¡«å……è¿žæŽ¥åˆ°mysqlæ•°æ®åº“ä¸ºä¾‹ï¼Œä»‹ç»å®žçŽ°æ­¥éª¤
 
-* Ç°ÌáÌõ¼þ:
-    - os: windows²Ù×÷ÏµÍ³
-    - ÒÑ°²×°python3²¢¿ÉÔËÐÐpython
-    - navicat-premiumÒÑ°²×°²¢¿ÉÔËÐÐ
+* å‰ææ¡ä»¶:
+    - os: windowsæ“ä½œç³»ç»Ÿ
+    - å·²å®‰è£…python3å¹¶å¯è¿è¡Œpython
+    - navicat-premiumå·²å®‰è£…å¹¶å¯è¿è¡Œ
 
-* Ò»¸öÒÑÁ¬½ÓµÄnavicat-premiumÍ¼Ê¾ÈçÏÂ
+* ä¸€ä¸ªå·²è¿žæŽ¥çš„navicat-premiumå›¾ç¤ºå¦‚ä¸‹
     ![navicat-premium](images/navicat_connected.png)
 
-### »·¾³ÉèÖÃ
+### çŽ¯å¢ƒè®¾ç½®
 
-´ò¿ªcmdÃüÁî²¢½øÈëÌî³ä¹¤¾ß´úÂë¿âÎÄ¼þ¼Ð¡£Èçf:/yyf_work_sta/cloudSoft-cpp/AppAutoFill
+æ‰“å¼€cmdå‘½ä»¤å¹¶è¿›å…¥å¡«å……å·¥å…·ä»£ç åº“æ–‡ä»¶å¤¹ã€‚å¦‚f:/yyf_work_sta/cloudSoft-cpp/AppAutoFill
 
-1. win + r ²¢ÊäÈëcmd´ò¿ªcmd
+1. win + r å¹¶è¾“å…¥cmdæ‰“å¼€cmd
 
-2. ¼üÈë cd "f:/yyf_work_sta/cloudSoft-cpp/AppAutoFill"²¢»Ø³µ,È»ºó¼üÈëf: ½øÈëÄ¿µÄÎÄ¼þ¼Ð 
+2. é”®å…¥ cd "f:/yyf_work_sta/cloudSoft-cpp/AppAutoFill"å¹¶å›žè½¦,ç„¶åŽé”®å…¥f: è¿›å…¥ç›®çš„æ–‡ä»¶å¤¹ 
 
-3. ÊäÈëset APPLAUNCHER_DEBUG=1,´ò¿ªdebugÐÅÏ¢
+3. è¾“å…¥set APPLAUNCHER_DEBUG=1,æ‰“å¼€debugä¿¡æ¯
     
-### ÅäÖÃ×Ô¶¯Ìî³äµÄjsonÎÄ¼þ
-ÕâÀïÊµÏÖÔÚnavicatÖÐ´ò¿ªÁ¬½Ó²¢ÐÂ´´½¨Ò»¸öÁ¬½Ó£¬×îºóÁ¬½Óµ½Êý¾Ý¿â
+### é…ç½®è‡ªåŠ¨å¡«å……çš„jsonæ–‡ä»¶
+è¿™é‡Œå®žçŽ°åœ¨navicatä¸­æ‰“å¼€è¿žæŽ¥å¹¶æ–°åˆ›å»ºä¸€ä¸ªè¿žæŽ¥ï¼Œæœ€åŽè¿žæŽ¥åˆ°æ•°æ®åº“
 
-* ²å¼þÐÅÏ¢ÈçÏÂ,ÒÔ:Îª·Ö¸ô·û£¬´ÓµÚ3ÁÐ¿ªÊ¼£¬ËûÃÇ·Ö±ðÊÇclass id text,À¨ºÅÖÐµÄËÄ¸öÊý×Ö·Ö±ðÊÇ²å¼þ
-  ×óÉÏ½Çºá×ø±ê£¬×Ý×ø±ê ÓÒÉÏ½ÇµÄºá×ø±êºÍ×Ý×ø±ê¡£
+* æ’ä»¶ä¿¡æ¯å¦‚ä¸‹,ä»¥:ä¸ºåˆ†éš”ç¬¦ï¼Œä»Žç¬¬3åˆ—å¼€å§‹ï¼Œä»–ä»¬åˆ†åˆ«æ˜¯class id text,æ‹¬å·ä¸­çš„å››ä¸ªæ•°å­—åˆ†åˆ«æ˜¯æ’ä»¶
+  å·¦ä¸Šè§’æ¨ªåæ ‡ï¼Œçºµåæ ‡ å³ä¸Šè§’çš„æ¨ªåæ ‡å’Œçºµåæ ‡ã€‚
     ```bash
     13456:0x5f0960:TActionMainMenuBar:6228320:ActionMainMenuBar ->(0, 23, 1920, 50)
     ```
-* ÕâÀïÍ¨¹ý²éÕÒ²å¼þÐÅÏ¢À´È·ÈÏ²Ù×÷¶ÔÏó£¬¹æÔòÈçÏÂ£º
-    * Èç¹ûidÄÜÈ·¶¨ÇÒÔÚ¶à´Î´ò¿ªÊ±±£³Ö²»±ä£¬ÓÅÏÈÊ¹ÓÃid
-    * Èç¹ûÓÐtextÖµ£¬Ê¹ÓÃtextÖµ
-    * Èç¹ûÓÐclassÖµ£¬Ê¹ÓÃclassÖµ
-    * Èç¹ûÉÏÊöÖµÓÐ¶à¸ö£¬ÔòÊ¹ÓÃ²ÎÊý"seq"È·ÈÏÐèÒªÑ¡È¡µÄ²å¼þ£¬seqÒÔintÖµ0ÎªµÚÒ»¸öÊýÖµ
+* è¿™é‡Œé€šè¿‡æŸ¥æ‰¾æ’ä»¶ä¿¡æ¯æ¥ç¡®è®¤æ“ä½œå¯¹è±¡ï¼Œè§„åˆ™å¦‚ä¸‹ï¼š
+    * å¦‚æžœidèƒ½ç¡®å®šä¸”åœ¨å¤šæ¬¡æ‰“å¼€æ—¶ä¿æŒä¸å˜ï¼Œä¼˜å…ˆä½¿ç”¨id
+    * å¦‚æžœæœ‰textå€¼ï¼Œä½¿ç”¨textå€¼
+    * å¦‚æžœæœ‰classå€¼ï¼Œä½¿ç”¨classå€¼
+    * å¦‚æžœä¸Šè¿°å€¼æœ‰å¤šä¸ªï¼Œåˆ™ä½¿ç”¨å‚æ•°"seq"ç¡®è®¤éœ€è¦é€‰å–çš„æ’ä»¶ï¼Œseqä»¥intå€¼0ä¸ºç¬¬ä¸€ä¸ªæ•°å€¼
 
-* ×Ô¶¯´úÌîÖ§³Ö¶Ô²Ù×÷¶ÔÏó£¨´°¿Ú¾ä±ú£©½øÐÐÏÂÁÐ²Ù×÷£º
-    * keyboard£ºÏòÄ¿±ê¶ÔÏó·¢ËÍ¼üÅÌÊÂ¼þ£¬²ÎÊý¸ñÊ½ÈçÏÂ, µÚÒ»¸ö²ÎÊý±íÊ¾ÐèÒªÏÈÔÚ¿Ø¼þÉÏµã»÷Êó±êµÄÏà¶ÔÎ»ÖÃ£¬[0,0]
-    ±íÊ¾²»µã»÷Êó±ê£»µÚ¶þ¸ö²ÎÊýÎª¼üÅÌÊäÈëµÄÄÚÈÝ£¬Ö§³Ö×Ö·û´®ÒÔ¼°´óÐ¡Ð´£»µÚÈý¸ö²ÎÊý¿ÉÑ¡£¬Ö§³ÖCTRLºÍALT
+* è‡ªåŠ¨ä»£å¡«æ”¯æŒå¯¹æ“ä½œå¯¹è±¡ï¼ˆçª—å£å¥æŸ„ï¼‰è¿›è¡Œä¸‹åˆ—æ“ä½œï¼š
+    * keyboardï¼šå‘ç›®æ ‡å¯¹è±¡å‘é€é”®ç›˜äº‹ä»¶ï¼Œå‚æ•°æ ¼å¼å¦‚ä¸‹, ç¬¬ä¸€ä¸ªå‚æ•°è¡¨ç¤ºéœ€è¦å…ˆåœ¨æŽ§ä»¶ä¸Šç‚¹å‡»é¼ æ ‡çš„ç›¸å¯¹ä½ç½®ï¼Œ[0,0]
+    è¡¨ç¤ºä¸ç‚¹å‡»é¼ æ ‡ï¼›ç¬¬äºŒä¸ªå‚æ•°ä¸ºé”®ç›˜è¾“å…¥çš„å†…å®¹ï¼Œæ”¯æŒå­—ç¬¦ä¸²ä»¥åŠå¤§å°å†™ï¼›ç¬¬ä¸‰ä¸ªå‚æ•°å¯é€‰ï¼Œæ”¯æŒCTRLå’ŒALT
         ```bash
               {
-                "desc": "ÓÃ¿ì½Ý¼ü´ò¿ªÁ¬½Ó´°¿Ú",
+                "desc": "ç”¨å¿«æ·é”®æ‰“å¼€è¿žæŽ¥çª—å£",
                 "target": {},
                 "event" : "keyboard",
                 "param": [[0, 0], "u", "ctrl"],
                 "wait": 2
               },
         ```
-    * mouse: ÏòÄ¿±ê¶ÔÏó·¢ËÍÊó±êµã»÷ÊÂ¼þ£¬²ÎÊý¸ñÊ½ÈçÏÂ£¬µÚÒ»¸ö²ÎÊý±êÊ¶ÔÚ¿Ø¼þÉÏµã»÷Êó±êµÄÏà¶ÔÎ»ÖÃ£¬µÚ¶þ¸ö²ÎÊý±íÊ¾
-    ÊÇµã»÷×ó¼ü»¹ÊÇÓÒ¼ü¡£
+    * mouse: å‘ç›®æ ‡å¯¹è±¡å‘é€é¼ æ ‡ç‚¹å‡»äº‹ä»¶ï¼Œå‚æ•°æ ¼å¼å¦‚ä¸‹ï¼Œç¬¬ä¸€ä¸ªå‚æ•°æ ‡è¯†åœ¨æŽ§ä»¶ä¸Šç‚¹å‡»é¼ æ ‡çš„ç›¸å¯¹ä½ç½®ï¼Œç¬¬äºŒä¸ªå‚æ•°è¡¨ç¤º
+    æ˜¯ç‚¹å‡»å·¦é”®è¿˜æ˜¯å³é”®ã€‚
         ```bash
               {
-                "desc": "µã»÷OK°´Å¥",
+                "desc": "ç‚¹å‡»OKæŒ‰é’®",
                 "target": {
                   "text": "OK"
                 },
@@ -63,11 +63,11 @@
                 "wait": 2
               },
         ```
-    * message: ÏòÄ¿±ê¶ÔÏó·¢ËÍwindows messageÊÂ¼þ£¬Ò»°ãÎªWM_SETTEXT£¬ÉèÖÃÎÄ±¾ÐÅÏ¢£¬µÚÒ»¸ö²ÎÊýÎªÏûÏ¢ÀàÐÍ£¬µÚ¶þ¸ö²ÎÊý
-    ÎªÏûÏ¢ÄÚÈÝ¡£
+    * message: å‘ç›®æ ‡å¯¹è±¡å‘é€windows messageäº‹ä»¶ï¼Œä¸€èˆ¬ä¸ºWM_SETTEXTï¼Œè®¾ç½®æ–‡æœ¬ä¿¡æ¯ï¼Œç¬¬ä¸€ä¸ªå‚æ•°ä¸ºæ¶ˆæ¯ç±»åž‹ï¼Œç¬¬äºŒä¸ªå‚æ•°
+    ä¸ºæ¶ˆæ¯å†…å®¹ã€‚
         ```bash
               {
-                "desc": "ÊäÈëIPµØÖ·",
+                "desc": "è¾“å…¥IPåœ°å€",
                 "target": {
                   "text": "127.0.0.1"
                 },
@@ -76,12 +76,12 @@
                 "wait": 0.1
               },
         ```
-    * hide: Òþ²ØÄ¿±ê¶ÔÏó£¬Í¨³£ÎªÊäÈë·¨´°¿Ú
+    * hide: éšè—ç›®æ ‡å¯¹è±¡ï¼Œé€šå¸¸ä¸ºè¾“å…¥æ³•çª—å£
         ```bash
               {
-                "desc": "Òþ²ØÊäÈë·¨£¬´Ë²½Öè¿ÉÄÜÊ§°Ü£¬µ«ÊÇÊ§°ÜºóÈÔÈ»¼ÌÐø",
+                "desc": "éšè—è¾“å…¥æ³•ï¼Œæ­¤æ­¥éª¤å¯èƒ½å¤±è´¥ï¼Œä½†æ˜¯å¤±è´¥åŽä»ç„¶ç»§ç»­",
                 "target": {
-                  "desc": "ÀàÐÍÎªNativeHWNDHostµÄ¿Ø¼þ",
+                  "desc": "ç±»åž‹ä¸ºNativeHWNDHostçš„æŽ§ä»¶",
                   "class": "NativeHWNDHost",
                   "seq":0
                 },
@@ -92,9 +92,9 @@
               },
         ```
 
-1. ´´½¨ÅäÖÃÎÄ¼þ¡£ÅäÖÃÎÄ¼þÎªappÃû¼´¿É£¬ÕâÀï´´½¨navicate-premium.jsonÎÄ¼þ
-    1. ¿½±´µ±Ç°testÄ¿Â¼ÏÂµÄtemplate.json£¬¸ÄÎªnavicate-premium.json
-    2. °´Êµ¼ÊÇé¿öºÍÌáÊ¾ÐÞ¸Änavicate-premium.jsonÎÄ¼þÖÐµÄ²ÎÊý¡£ÈçÏÂ
+1. åˆ›å»ºé…ç½®æ–‡ä»¶ã€‚é…ç½®æ–‡ä»¶ä¸ºappåå³å¯ï¼Œè¿™é‡Œåˆ›å»ºnavicate-premium.jsonæ–‡ä»¶
+    1. æ‹·è´å½“å‰testç›®å½•ä¸‹çš„template.jsonï¼Œæ”¹ä¸ºnavicate-premium.json
+    2. æŒ‰å®žé™…æƒ…å†µå’Œæç¤ºä¿®æ”¹navicate-premium.jsonæ–‡ä»¶ä¸­çš„å‚æ•°ã€‚å¦‚ä¸‹
         ```bash
            {
               "name": "navicate-premium",
@@ -111,14 +111,14 @@
               }
            }
         ```
-    3. ´´½¨Ò»¸ö¼òµ¥µÄweb·þÎñÆ÷£¬°Ñnavicat.json copyµ½·þÎñÆ÷ÏÂ£¬web·þÎñÆ÷¼òµ¥µÄ´úÂëÔÚ[web_server_simulator.py](https://gitlab.cloudbility.cn:4443/cloudsoft/cloudSoft-cpp/blob/master/AppAutoFill/web_server_simulator.py)£¬ÏÂÔØÏÂÀ´£¬ÔÚÍ¬Ä¿Â¼´´½¨testÄ¿Â¼£¬½«navicate-premium.json¸´ÖÆµ½testÄ¿Â¼¼´¿É¡£È»ºóÔËÐÐÏÂÁÐÃüÁî
+    3. åˆ›å»ºä¸€ä¸ªç®€å•çš„webæœåŠ¡å™¨ï¼ŒæŠŠnavicat.json copyåˆ°æœåŠ¡å™¨ä¸‹ï¼ŒwebæœåŠ¡å™¨ç®€å•çš„ä»£ç åœ¨web_server_simulator.pyï¼Œä¸‹è½½ä¸‹æ¥ï¼Œåœ¨åŒç›®å½•åˆ›å»ºtestç›®å½•ï¼Œå°†navicate-premium.jsonå¤åˆ¶åˆ°testç›®å½•å³å¯ã€‚ç„¶åŽè¿è¡Œä¸‹åˆ—å‘½ä»¤
     ```bash
     python3 web_server_simulator.py
     ```
    
-2. ÔËÐÐÅäÖÃAppLauncher.exe£¬»ñÈ¡²å¼þÐÅÏ¢£¬²¢Öð²½ÊµÏÖÁ¬½ÓÊý¾Ý¿âµÄ²Ù×÷
-    1. ÔÚcmdÖÐÖ´ÐÐÖ´ÐÐ AppLauncher.exe http://127.0.0
-    .1:8080/req?app=navicat-premium¡£appÃû³ÆÎªtestÄ¿Â¼ÏÂjsonµÄÇ°×º¡£ÕâÀï»á½«navicat´ò¿ª²¢ÔÚÈÕÖ¾ÖÐÊä³öÏÂÁÐÐÅÏ¢
+2. è¿è¡Œé…ç½®AppLauncher.exeï¼ŒèŽ·å–æ’ä»¶ä¿¡æ¯ï¼Œå¹¶é€æ­¥å®žçŽ°è¿žæŽ¥æ•°æ®åº“çš„æ“ä½œ
+    1. åœ¨cmdä¸­æ‰§è¡Œæ‰§è¡Œ AppLauncher.exe http://127.0.0
+    .1:8080/req?app=navicat-premiumã€‚appåç§°ä¸ºtestç›®å½•ä¸‹jsonçš„å‰ç¼€ã€‚è¿™é‡Œä¼šå°†navicatæ‰“å¼€å¹¶åœ¨æ—¥å¿—ä¸­è¾“å‡ºä¸‹åˆ—ä¿¡æ¯
         ```bash
         find windows <win_app.win_app object at 0x04095FB0>(pid 13456, hwnd [<window_handler.window_handler object at 0x04367850>]) target {'text': '^Navicat'}
         dump all child window info
@@ -168,15 +168,15 @@
         http://127.0.0.1:8080 "GET /callback?sessionClose=True HTTP/1.1" 200 None
         ```
     
-    2. ·ÖÎöÉÏÒ»²½ÖèµÄÈÕÖ¾ÐÅÏ¢£¬ÕÒµ½**file**¶ÔÓ¦µÄ²å¼þ£¬ÊµÏÖÊó±êÒÆ¶¯µ½²Ëµ¥²å¼þ**File**ÉÏ
-        * ³õ²½·ÖÎö**file**²å¼þÔÚ×óÉÏ½Ç£¬ËùÒÔ¿ÉÔÚÉÏÃæµÄÈÕÖ¾ÖÐÅÅ³ý×óÉÏ½Çºá×ø±ê¹ý´óµÄ²å¼þ¡£
-        * ½«¿ÉÄÜµÄ²å¼þ·ÅÈëµ½ÔÚnavicate-premium.jsonÖÐµÄactionÖÐ£¬
-            * ¼üÖµËµÃ÷ÈçÏÂ
-                - target: È·¶¨ÐèÒª»ñÈ¡µÄ²å¼þ
-                - event: ¶¯×÷ÏûÏ¢¡£ÈçÊó±ê£¬·¢ËÍÏûÏ¢
-                - param: ²ÎÊý¡£ÖµÎªÒ»¸öÊý×é£¬Êý×éÖÐµÚÒ»¸öÖµÎªÊý×éÔòÎªÊó±êÆ«ÒÆÁ¿£¬ºóÃæ½ÓÊó±êµÄµã»÷¶¯×÷£»
-                Èç¹ûeventÊÇ·¢ËÍÏûÏ¢£¬ÔòparamÎªÉèÖÃÏûÏ¢£¬µÚÒ»¸ö²ÎÊýÎª¶¯×÷£¬µÚ¶þ¸ö²ÎÊýÎªÖµ
-            * ÔÚ³¢ÊÔ¶à´Îºó£¬¼ÓÈëÄÚÈÝÈçÏÂµ½acitonÖÐ¿ÉÊµÏÖÊó±êµã»÷**file**²Ëµ¥¡£×¢£ºÕâÀïÒ²¿ÉÒÔÍ¨¹ý¹¤¾ßÀ´¸¨ÖúÕÒµ½²å¼þ
+    2. åˆ†æžä¸Šä¸€æ­¥éª¤çš„æ—¥å¿—ä¿¡æ¯ï¼Œæ‰¾åˆ°**file**å¯¹åº”çš„æ’ä»¶ï¼Œå®žçŽ°é¼ æ ‡ç§»åŠ¨åˆ°èœå•æ’ä»¶**File**ä¸Š
+        * åˆæ­¥åˆ†æž**file**æ’ä»¶åœ¨å·¦ä¸Šè§’ï¼Œæ‰€ä»¥å¯åœ¨ä¸Šé¢çš„æ—¥å¿—ä¸­æŽ’é™¤å·¦ä¸Šè§’æ¨ªåæ ‡è¿‡å¤§çš„æ’ä»¶ã€‚
+        * å°†å¯èƒ½çš„æ’ä»¶æ”¾å…¥åˆ°åœ¨navicate-premium.jsonä¸­çš„actionä¸­ï¼Œ
+            * é”®å€¼è¯´æ˜Žå¦‚ä¸‹
+                - target: ç¡®å®šéœ€è¦èŽ·å–çš„æ’ä»¶
+                - event: åŠ¨ä½œæ¶ˆæ¯ã€‚å¦‚é¼ æ ‡ï¼Œå‘é€æ¶ˆæ¯
+                - param: å‚æ•°ã€‚å€¼ä¸ºä¸€ä¸ªæ•°ç»„ï¼Œæ•°ç»„ä¸­ç¬¬ä¸€ä¸ªå€¼ä¸ºæ•°ç»„åˆ™ä¸ºé¼ æ ‡åç§»é‡ï¼ŒåŽé¢æŽ¥é¼ æ ‡çš„ç‚¹å‡»åŠ¨ä½œï¼›
+                å¦‚æžœeventæ˜¯å‘é€æ¶ˆæ¯ï¼Œåˆ™paramä¸ºè®¾ç½®æ¶ˆæ¯ï¼Œç¬¬ä¸€ä¸ªå‚æ•°ä¸ºåŠ¨ä½œï¼Œç¬¬äºŒä¸ªå‚æ•°ä¸ºå€¼
+            * åœ¨å°è¯•å¤šæ¬¡åŽï¼ŒåŠ å…¥å†…å®¹å¦‚ä¸‹åˆ°acitonä¸­å¯å®žçŽ°é¼ æ ‡ç‚¹å‡»**file**èœå•ã€‚æ³¨ï¼šè¿™é‡Œä¹Ÿå¯ä»¥é€šè¿‡å·¥å…·æ¥è¾…åŠ©æ‰¾åˆ°æ’ä»¶
                 ```bash
                     {
                     "target": {
@@ -194,8 +194,8 @@
                       }
                 ```
             
-    3. ÖØÆô²½Öè1ÖÐµÄexe³ÌÐò£¬»ñÈ¡Êó±êµÄ²å¼þÐÅÏ¢¡£»ñÈ¡ÒÔÏÂµÄÈÕÖ¾ÐÅÏ¢£¬ÆäÖÐbefore execÊÇÖ´ÐÐÊó±ê×ó¼üµã»÷fileÇ°µÄ²å¼þÐÅÏ¢£»
-    After exec ÊÇÖ´ÐÐÊó±êµã»÷ºóµÄ²å¼þÐÅÏ¢£¬ÕâÀïÎÒÃÇÓ¦¸ÃÈ¥Êó±êµã»÷ºóµÄ²å¼þ
+    3. é‡å¯æ­¥éª¤1ä¸­çš„exeç¨‹åºï¼ŒèŽ·å–é¼ æ ‡çš„æ’ä»¶ä¿¡æ¯ã€‚èŽ·å–ä»¥ä¸‹çš„æ—¥å¿—ä¿¡æ¯ï¼Œå…¶ä¸­before execæ˜¯æ‰§è¡Œé¼ æ ‡å·¦é”®ç‚¹å‡»fileå‰çš„æ’ä»¶ä¿¡æ¯ï¼›
+    After exec æ˜¯æ‰§è¡Œé¼ æ ‡ç‚¹å‡»åŽçš„æ’ä»¶ä¿¡æ¯ï¼Œè¿™é‡Œæˆ‘ä»¬åº”è¯¥åŽ»é¼ æ ‡ç‚¹å‡»åŽçš„æ’ä»¶
         ```bash
             ====================begin====================
             before exec action {'target': {'text': 'ActionMainMenuBar'}, 'event': 'mouse', 'param': [[10, 10], 'left'], 'wait': 0.5}
@@ -248,7 +248,7 @@
             ====================end====================
         ```
     
-    4. ÀûÓÃÊó±ê²å¼þÊµÏÖÊó±êÒÆ¶¯¡£ÓÉÓÚ²½Öè3ÖÐÖ´ÐÐºóÖ»ÓÐ1¸ö²å¼þÐÅÏ¢£¬ËùÒÔÎÒÃÇÔÚactionÖÐÌí¼ÓÄÚÈÝÈçÏÂ¡£
+    4. åˆ©ç”¨é¼ æ ‡æ’ä»¶å®žçŽ°é¼ æ ‡ç§»åŠ¨ã€‚ç”±äºŽæ­¥éª¤3ä¸­æ‰§è¡ŒåŽåªæœ‰1ä¸ªæ’ä»¶ä¿¡æ¯ï¼Œæ‰€ä»¥æˆ‘ä»¬åœ¨actionä¸­æ·»åŠ å†…å®¹å¦‚ä¸‹ã€‚
         ```bash
         {
                 "target": {
@@ -266,7 +266,7 @@
         }
         ```
         
-    5. ÖØ¸´²½Öè3ºÍ²½Öè4£¬Ò»²½Ò»²½ÊµÏÖ×îÖÕÁ¬½ÓÊý¾Ý¿âµÄÄ¿µÄ¡£µÃµ½µÄjsonÎÄ¼þÄÚÈÝÈçÏÂ
+    5. é‡å¤æ­¥éª¤3å’Œæ­¥éª¤4ï¼Œä¸€æ­¥ä¸€æ­¥å®žçŽ°æœ€ç»ˆè¿žæŽ¥æ•°æ®åº“çš„ç›®çš„ã€‚å¾—åˆ°çš„jsonæ–‡ä»¶å†…å®¹å¦‚ä¸‹
         ```bash
         {
           "name": "navicate-premium",
@@ -440,7 +440,7 @@
         }
         ```
     
-    6. ÊµÏÖ¹Ø±ÕappºóµÄÇå³ýÁ¬½Ó¹¤×÷¡£Õâ¿ÉÒÔÔÚjsonÎÄ¼þµÄpostrun²ÎÊýÖÐ¶¨Òå¡£ÒÔÏÂÊÇÉ¾³ýnavicatÖÐµÄÁ¬½Ó´®µÄ¶¨Òå£¬¿ÉÒÔ¹©²Î¿¼
+    6. å®žçŽ°å…³é—­appåŽçš„æ¸…é™¤è¿žæŽ¥å·¥ä½œã€‚è¿™å¯ä»¥åœ¨jsonæ–‡ä»¶çš„postrunå‚æ•°ä¸­å®šä¹‰ã€‚ä»¥ä¸‹æ˜¯åˆ é™¤navicatä¸­çš„è¿žæŽ¥ä¸²çš„å®šä¹‰ï¼Œå¯ä»¥ä¾›å‚è€ƒ
         ```bash
                {
                   "action": "fileclean",
@@ -463,7 +463,7 @@
                 }
         ```
         
-    7. ×îÖÕµÄjsonÎÄ¼þÄÚÈÝÈçÏÂ
+    7. æœ€ç»ˆçš„jsonæ–‡ä»¶å†…å®¹å¦‚ä¸‹
         ```bash
             {
               "name": "navicate-premium",
@@ -655,17 +655,17 @@
             }
         ```
         
-## ÔËÐÐ³ÌÐò
-Íê³ÉÅäÖÃºó£¬¿É¹Ø±Õµ÷ÊÔÈÕÖ¾£¬È»ºó²âÊÔÊÇ·ñ¿ÉÒÔÊµÏÖ×Ô¶¯Á¬½ÓÊý¾Ý¿â
+## è¿è¡Œç¨‹åº
+å®Œæˆé…ç½®åŽï¼Œå¯å…³é—­è°ƒè¯•æ—¥å¿—ï¼Œç„¶åŽæµ‹è¯•æ˜¯å¦å¯ä»¥å®žçŽ°è‡ªåŠ¨è¿žæŽ¥æ•°æ®åº“
 
-### »·¾³ÅäÖÃ
-* ÔÚcmdÖÐÉèÖÃ±äÁ¿£¬ÒÔÈ¡Ïûµ÷ÊÔÈÕÖ¾
+### çŽ¯å¢ƒé…ç½®
+* åœ¨cmdä¸­è®¾ç½®å˜é‡ï¼Œä»¥å–æ¶ˆè°ƒè¯•æ—¥å¿—
     ```bash
        set APPLAUNCHER_DEBUG=0
     ```
 
-### ÔËÐÐ³ÌÐò¡£
-* ÔÚcmdÖÐÖ´ÐÐÒÔÏÂ³ÌÐò
+### è¿è¡Œç¨‹åºã€‚
+* åœ¨cmdä¸­æ‰§è¡Œä»¥ä¸‹ç¨‹åº
     ```bash
        AppLauncher.exe http://127.0.0.1:8080/req?app=navicat-premium
     ```
